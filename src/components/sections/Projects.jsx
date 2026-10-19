@@ -129,14 +129,7 @@ const Projects = () => {
                 </div>
 
                 <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span>GitHub</span>
-                    <ArrowUpRight size={16} />
-                  </a>
+                 
 
                   <a
                     href={project.live}
