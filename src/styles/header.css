@@ -1,0 +1,162 @@
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding-top: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  z-index: 1000;
+
+  pointer-events: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.portfolio-navbar {
+  pointer-events: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  padding: 10px 42px;
+
+  background: #000000;
+
+  border-radius: 0 0 22px 22px;
+
+  min-width: 700px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.portfolio-nav-link {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #dedbc8;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  padding: 10px 22px;
+
+  cursor: pointer;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.portfolio-nav-link:hover {
+  color: #dedbc8;
+
+  opacity: 0.65;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+  .site-header {
+    padding-top: 14px;
+  }
+
+  .portfolio-navbar {
+    min-width: auto;
+
+    width: auto;
+
+    max-width: calc(100% - 40px);
+
+    gap: 8px;
+
+    padding: 15px 25px;
+
+    border-radius: 0 0 20px 20px;
+  }
+
+  .portfolio-nav-link {
+    font-size: 14px;
+
+    padding: 8px 12px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767.98px) {
+  .site-header {
+    padding-top: 5px;
+  }
+
+  .portfolio-navbar {
+    width: calc(100% - 30px);
+
+    max-width: none;
+
+    gap: 0;
+
+    padding: 13px 8px;
+
+    border-radius: 0 0 18px 18px;
+  }
+
+  .portfolio-nav-link {
+    flex: 1;
+
+    padding: 8px 4px;
+
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+  .portfolio-navbar {
+    width: calc(100% - 80px);
+
+    padding: 12px 5px;
+  }
+
+  .portfolio-nav-link {
+    padding: 8px 2px;
+
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,458 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: #000;
+}
+
+
+/* =========================================
+   VIDEO WRAPPER
+========================================= */
+
+.hero-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 40px);
+  min-height: 650px;
+
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+
+/* =========================================
+   BACKGROUND VIDEO
+========================================= */
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.02) 45%,
+    rgba(0, 0, 0, 0.60) 100%
+  );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 35px 35px;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.hero-name-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-name {
+  margin: 10;
+
+  color: #dedbc8;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(100px, 18vw, 300px);
+
+  font-weight: 500;
+
+  line-height: 0.65;
+
+  letter-spacing: -0.09em;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.hero-intro {
+  width: 100%;
+  max-width: 350px;
+
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.hero-intro p {
+  margin: 0 0 24px;
+
+  color: #dedbc8;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   PROJECT BUTTON
+========================================= */
+
+.hero-project-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  border: none;
+  outline: none;
+
+  padding: 6px 7px 6px 18px;
+
+  background: #dedbc8;
+  color: #111;
+
+  border-radius: 50px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.hero-project-btn:hover {
+  background: #fff;
+}
+
+
+/* =========================================
+   BUTTON ICON
+========================================= */
+
+.hero-btn-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111;
+  color: #dedbc8;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (max-width: 1399.98px) {
+
+  .hero-section {
+    padding: 18px;
+  }
+
+  .hero-video-wrapper {
+    height: calc(100vh - 36px);
+  }
+
+  .hero-container {
+    padding: 0 30px 30px;
+  }
+
+  .hero-name {
+    font-size: clamp(100px, 18vw, 280px);
+  }
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1199.98px) {
+
+  .hero-section {
+    padding: 16px;
+  }
+
+  .hero-video-wrapper {
+    height: calc(100vh - 32px);
+  }
+
+  .hero-container {
+    padding: 0 28px 28px;
+  }
+
+  .hero-name {
+    font-size: clamp(90px, 17vw, 240px);
+  }
+
+  .hero-intro {
+    max-width: 300px;
+  }
+
+  .hero-intro p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   IMPORTANT:
+   LEFT + RIGHT MUST STAY SIDE BY SIDE
+========================================= */
+
+@media (max-width: 991.98px) {
+
+  .hero-section {
+    padding: 14px;
+  }
+
+  .hero-video-wrapper {
+    height: calc(100vh - 28px);
+
+    min-height: 620px;
+
+    border-radius: 24px;
+  }
+
+  .hero-container {
+    padding: 0 24px 40px;
+  }
+
+  /*
+     Keep Bootstrap row in horizontal layout
+     even on tablet.
+  */
+
+  .hero-container .row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-end !important;
+  }
+
+  /*
+     LEFT SIDE
+  */
+
+  .hero-container .col-12.col-lg-8 {
+    width: 66.666667%;
+  }
+
+  /*
+     RIGHT SIDE
+  */
+
+  .hero-container .col-12.col-lg-4 {
+    width: 33.333333%;
+  }
+
+  .hero-name {
+    font-size: clamp(75px, 16vw, 180px);
+
+    line-height: 0.68;
+  }
+
+  .hero-intro {
+    max-width: 240px;
+
+    margin-left: auto;
+    margin-bottom: 5px;
+  }
+
+  .hero-intro p {
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+  }
+
+  .hero-project-btn {
+    font-size: 11px;
+
+    gap: 9px;
+
+    padding: 5px 6px 5px 14px;
+  }
+
+  .hero-btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   Here we finally stack the content
+========================================= */
+
+@media (max-width: 767.98px) {
+
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-video-wrapper {
+    height: calc(100vh - 20px);
+
+    min-height: 620px;
+
+    border-radius: 20px;
+  }
+
+  .hero-container {
+    padding: 0 18px 35px;
+  }
+
+  /*
+     On actual mobile:
+     name + intro become vertical
+  */
+
+  .hero-container .row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start !important;
+
+    justify-content: flex-end;
+  }
+
+  .hero-container .col-12.col-lg-8,
+  .hero-container .col-12.col-lg-4 {
+    width: 100%;
+  }
+
+  .hero-name {
+    font-size: clamp(65px, 22vw, 140px);
+
+    line-height: 0.7;
+  }
+
+  .hero-intro {
+    max-width: 300px;
+
+    margin-left: 0;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .hero-intro p {
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    margin-bottom: 18px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+  .hero-section {
+    padding: 8px;
+  }
+
+  .hero-video-wrapper {
+    height: calc(100vh - 16px);
+
+    min-height: 580px;
+
+    border-radius: 17px;
+  }
+
+  .hero-container {
+    padding: 0 15px 30px;
+  }
+
+  .hero-name {
+    font-size: clamp(58px, 23vw, 115px);
+
+    letter-spacing: -0.08em;
+  }
+
+  .hero-intro {
+    max-width: 285px;
+
+    margin-top: 20px;
+  }
+
+  .hero-intro p {
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+  }
+
+  .hero-project-btn {
+    font-size: 10.5px;
+
+    gap: 8px;
+
+    padding: 5px 6px 5px 14px;
+  }
+
+  .hero-btn-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

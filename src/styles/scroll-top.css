@@ -1,0 +1,49 @@
+.scroll-top-button {
+  position: fixed;
+
+  right: 30px;
+  bottom: 30px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(222, 219, 200, 0.15);
+  border-radius: 50%;
+
+  background: #dedbc8;
+  color: #111111;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.scroll-top-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767.98px) {
+  .scroll-top-button {
+    right: 18px;
+    bottom: 18px;
+
+    width: 46px;
+    height: 46px;
+  }
+}

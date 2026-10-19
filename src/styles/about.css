@@ -1,0 +1,253 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 100px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #000;
+}
+
+
+
+
+/* =========================================
+   CENTER CONTENT CARD
+========================================= */
+
+.about-container {
+  width: 100%;
+  max-width: 1120px;
+
+  min-height: 590px;
+
+  padding: 80px 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 30px;
+
+  /*
+    Reference jaisa halka dark gray background
+  */
+  background: #101010;
+
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.about-heading {
+  max-width: 900px;
+
+  margin: 0;
+
+  color: #dedbc8;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(42px, 5vw, 76px);
+
+  font-weight: 500;
+
+  line-height: 1.12;
+
+  letter-spacing: -0.045em;
+
+  text-align: center;
+}
+
+
+/* Italic words */
+
+.about-heading em {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================
+   SCROLL REVEAL PARAGRAPH
+========================================= */
+
+.about-reveal-wrapper {
+  width: 100%;
+  max-width: 650px;
+
+  margin-top: 85px;
+}
+
+.about-reveal-text {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.65;
+
+  text-align: center;
+}
+
+.about-word {
+  display: inline;
+}
+
+
+/* =========================================
+   LARGE LAPTOP
+========================================= */
+
+@media (max-width: 1199.98px) {
+
+  .about-section {
+    padding: 80px 25px;
+  }
+
+  .about-container {
+    max-width: 950px;
+
+    min-height: 540px;
+
+    padding: 70px 75px;
+  }
+
+  .about-heading {
+    font-size: clamp(40px, 5vw, 65px);
+  }
+
+  .about-reveal-wrapper {
+    margin-top: 70px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+  .about-section {
+    min-height: auto;
+    padding: 60px 20px;
+
+  }
+
+  .about-container {
+    min-height: 520px;
+
+    padding: 65px 55px;
+
+    border-radius: 26px;
+  }
+
+  .about-heading {
+    font-size: clamp(36px, 5.5vw, 52px);
+
+    line-height: 1.15;
+  }
+
+  .about-reveal-wrapper {
+    max-width: 570px;
+
+    margin-top: 60px;
+  }
+
+  .about-reveal-text {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+  .about-section {
+    min-height: auto;
+
+    padding: 50px 15px;
+
+  }
+
+  .about-container {
+    min-height: 500px;
+
+    padding: 55px 25px;
+
+    border-radius: 22px;
+  }
+
+  .about-heading {
+    font-size: clamp(30px, 8vw, 44px);
+
+    line-height: 1.17;
+  }
+
+  .about-reveal-wrapper {
+    margin-top: 55px;
+
+    max-width: 480px;
+  }
+
+  .about-reveal-text {
+    font-size: 12px;
+
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+  .about-section {
+    padding: 40px 10px;
+  }
+
+  .about-container {
+    min-height: 460px;
+
+    padding: 45px 18px;
+
+    border-radius: 18px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+
+    line-height: 1.2;
+  }
+
+  .about-reveal-wrapper {
+    margin-top: 45px;
+  }
+
+  .about-reveal-text {
+    font-size: 11px;
+  }
+}

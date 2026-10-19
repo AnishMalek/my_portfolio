@@ -1,0 +1,312 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  position: relative;
+  width: 100%;
+
+  min-height: 78vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 90px 24px;
+
+  background: #050505;
+
+  color: #dedbc8;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   GRAIN BACKGROUND
+========================= */
+
+.contact-noise {
+  position: absolute;
+  inset: -50%;
+
+  z-index: 0;
+
+  pointer-events: none;
+
+  opacity: 0.06;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.30'/%3E%3C/svg%3E");
+
+  background-repeat: repeat;
+
+  background-size: 180px 180px;
+
+  mix-blend-mode: screen;
+}
+
+
+/* =========================
+   WRAPPER
+========================= */
+
+.contact-wrapper {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 400;
+
+  font-size: clamp(38px, 7vw, 100px);
+
+  line-height: 1.1;
+
+  letter-spacing: -0.03em;
+}
+
+.contact-heading-muted {
+  color: #6b7280;
+}
+
+.contact-heading-accent {
+  color: #dedbc8;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-style: italic;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.contact-description {
+  margin: 26px 0 0;
+
+  max-width: 680px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  color: #8b9099;
+}
+
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+.contact-cta {
+  margin-top: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 205px;
+
+  height: 70px;
+
+  padding: 0 30px;
+
+  border-radius: 999px;
+
+  background: #dedbc8;
+
+  color: #101010;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-cta:hover {
+  background: #eeebdd;
+
+  color: #101010;
+}
+
+.contact-cta-arrow {
+  display: inline-flex;
+
+  align-items: center;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.contact-socials {
+  margin-top: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 26px;
+}
+
+.contact-social-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #6b7280;
+
+  transition: color 0.3s ease;
+}
+
+.contact-social-link:hover {
+  color: #dedbc8;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.contact-copyright {
+  margin: 22px 0 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991.98px) {
+
+  .contact-section {
+    min-height: 72vh;
+
+    padding: 75px 24px;
+  }
+
+  .contact-heading {
+    font-size: clamp(40px, 8vw, 70px);
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+
+  .contact-cta {
+    margin-top: 40px;
+  }
+
+  .contact-socials {
+    margin-top: 42px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575.98px) {
+
+  .contact-section {
+    min-height: 0;
+
+    padding: 60px 20px;
+  }
+
+  .contact-wrapper {
+    max-width: 100%;
+  }
+
+  .contact-heading {
+    font-size: clamp(34px, 11vw, 46px);
+
+    letter-spacing: -0.02em;
+  }
+
+  .contact-description {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .contact-cta {
+    margin-top: 34px;
+
+    width: 180px;
+
+    height: 60px;
+
+    font-size: 15px;
+  }
+
+  .contact-socials {
+    margin-top: 34px;
+
+    gap: 22px;
+  }
+
+  .contact-copyright {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    padding: 0 10px;
+  }
+
+}
